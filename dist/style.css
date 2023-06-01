@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    --page-border-radius: 20px;
+    --page-border: 1px solid #000000;
+    --button-font-size: 1.4rem;
+    --button-padding: 12px 24px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2vh;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    border: var(--page-border);
+    border-radius: var(--page-border-radius) var(--page-border-radius) 0 0 ;
+    border-bottom: none;
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+}
+
+#main-page, #cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: var(--page-border);
+    border-radius: 0 var(--page-border-radius) var(--page-border-radius) var(--page-border-radius);
+    gap: 2vh;
+}
+
+#main-page h1 {
+    font-size: 5.2rem;
+    margin: 0;
+}
+
+#main-page p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#main-page button, .card {
+    border: var(--page-border);
+    border-radius: var(--page-border-radius);
+    background-color: #ffffff;
+    font-size: var(--button-font-size);
+    padding: var(--button-padding);
+}
+
+.card h1 {
+    font-size: 3rem;
+}
+
+#cards {
+    gap: 4vh;
+    padding: 4vh;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.card li {
+    list-style-type: none;
+}
+
+.card {
+    min-width: 40vw;
+}
