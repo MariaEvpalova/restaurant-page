@@ -74,7 +74,7 @@ header li {
     padding: 4vh;
 }
 
-.price {
+.price, li#current {
     font-weight: 500;
 }
 
@@ -84,4 +84,9 @@ header li {
 
 .card {
     min-width: 40vw;
+}
+
+li:hover, #main-page button:hover {
+    color: #ffffff;
+    background-color: #000000;
 }
